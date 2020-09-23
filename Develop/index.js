@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const questions = [
     {
     type: "input",
-    name: "Questions",
+    name: "name",
     message: "Please enter your GitHub username: "
     },
     {
@@ -25,13 +25,13 @@ const questions = [
     },
     {
     type: "input",
-    name: "instruction",
+    name: "installation",
     message: "Any installation instructions?"
     },
     {    
     type: "list",
     message: "What type of license do you require?",
-    name: "contact",
+    name: "license",
     choices: [
       "MIT",
       "Apache 2.0",
