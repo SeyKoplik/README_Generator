@@ -1,5 +1,6 @@
 var fs = require('fs');
 const inquirer = require("inquirer");
+var generateMarkdown = require("./utils/generateMarkdown.js")
 
 // array of questions for user
 const questions = [
@@ -63,11 +64,14 @@ const questions = [
     },
 ];
 
-inquirer.prompt(questions);
+inquirer.prompt(questions)
+
+.then(function(answers) {
+    
+});
 
 // function to write README file
 function writeToFile(fileName, data) {
-    var fileName = "README.MD";
 
     fs.writeFile(fileName, JSON.stringify(data, null, '\t'), function(err) {
   
@@ -81,11 +85,12 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    writeToFile();
 
-    var generateMarkdown = require("./utils/generateMarkdown.js")
+    var markdown = generateMarkdown.generate();
 
-    generateMarkdown.generate;
+    writeToFile("readme_example.md", markdown);
+
+
 
 }
 
