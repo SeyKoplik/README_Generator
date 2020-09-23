@@ -81,26 +81,13 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+    writeToFile();
+
+    var generateMarkdown = require("./utils/generateMarkdown.js")
+
+    generateMarkdown.generate;
 
 }
 
 // function call to initialize program
 init();
-
-
-//===================//
-
-// ]).then(function(data) {
-
-//   var filename = data.name.toLowerCase().split(' ').join('') + ".json";
-
-//   fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
-
-//     if (err) {
-//       return console.log(err);
-//     }
-
-//     console.log("Success!");
-
-//   });
-// });
