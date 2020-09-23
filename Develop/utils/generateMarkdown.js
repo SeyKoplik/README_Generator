@@ -1,6 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} 
+  
+  ![badge](https://img.shields.io/badge/license-${data.license}-yellow)
 
   ## Description
   ${data.description}
@@ -14,7 +16,8 @@ function generateMarkdown(data) {
   *[Questions](#Questions)
 
   ## Installation
-  ${data.installation}
+  Please use this command to install:
+    * ${data.installation}
 
   ## Usage
   ${data.usage}
@@ -26,7 +29,8 @@ function generateMarkdown(data) {
   ${data.contribution}
 
   ## Tests
-  ${data.tests}
+  Please use this command to run tests:
+    * ${data.tests}
   
   ## Questions
   If you have any questions please feel free to reach my by email at the following email address: (${data.emailAddress}). Please check out the rest of my work on [${data.name}]('http://github.com/${data.name}) 

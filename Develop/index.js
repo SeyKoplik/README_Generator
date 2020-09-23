@@ -66,10 +66,9 @@ const questions = [
 
 inquirer.prompt(questions)
 
-.then(function(data) {
-    //fill in with something!!**
+.then(function() {
     // function call to initialize program
-    init(data);
+    init();
 });
 
 // function to write README file
