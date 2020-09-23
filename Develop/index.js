@@ -1,6 +1,4 @@
-// var inquirer = require("inquirer");
-// var fs = require('fs');
-
+var fs = require('fs');
 const inquirer = require("inquirer");
 
 // array of questions for user
@@ -23,7 +21,7 @@ const questions = [
     {
     type: "input",
     name: "description",
-    message: "What is your project's description?"
+    message: "Please provide a summary of the project:"
     },
     {
     type: "input",
@@ -53,8 +51,15 @@ const questions = [
     },
     {
     type: "input",
+    name: "dependencies",
+    message: "What command should be run to install dependencies?",
+    default: "npm i"
+    },
+    {
+    type: "input",
     name: "test",
-    message: "What kind of tests??"
+    message: "What command should be run to do tests?",
+    default: "npm test"
     },
 ];
 
@@ -62,8 +67,17 @@ inquirer.prompt(questions);
 
 // function to write README file
 function writeToFile(fileName, data) {
+    var fileName = "README.MD";
 
-}
+    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), function(err) {
+  
+      if (err) {
+        return console.log(err);
+      }
+  
+      console.log("Congrats! You have successfuly written a new README.MD file for your project");
+    });
+};
 
 // function to initialize program
 function init() {
@@ -76,29 +90,6 @@ init();
 
 //===================//
 
-// inquirer.prompt([
-
-//   {
-//     type: "checkbox",
-//     message: "What languages do you know?",
-//     name: "stack",
-//     choices: [
-//       "HTML", 
-//       "CSS", 
-//       "JavaScript", 
-//       "MySQL"
-//     ]
-//   },
-//   {
-//     type: "list",
-//     message: "What is your preferred method of communication?",
-//     name: "contact",
-//     choices: [
-//       "email",
-//       "phone",
-//       "telekinesis"
-//     ]
-//   }
 // ]).then(function(data) {
 
 //   var filename = data.name.toLowerCase().split(' ').join('') + ".json";
