@@ -1,23 +1,24 @@
-// function to generate markdown for README
+// function to generate markdown for README_example.md file being created
 function generateMarkdown(data) {
   return `# ${data.title} 
 
-![badge](https://img.shields.io/badge/license-${data.license}-informational)
+${data.badge}
 
 ## Description
 ${data.description}
 
 ## Table of Contents
-*[Installation](#Installation)
-*[Usage](#Usage)
-*[License](#License) 
-*[Contributing](#Contributing) 
-*[Test](#Test)
-*[Questions](#Questions)
+
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License) 
+  * [Contributing](#Contributing) 
+  * [Test](#Test)
+  * [Questions](#Questions)
 
 ## Installation
-Please use this command to install:
-* ${data.installation}
+- ${data.installation}
+- ${data.dependencies}
 
 ## Usage
 ${data.usage}
@@ -30,15 +31,12 @@ ${data.contribution}
 
 ## Tests
 Please use this command to run tests:
-* ${data.tests}
+- ${data.test}
 
 ## Questions
-If you have any questions please feel free to reach my by email at the following email address: (${data.emailAddress}). Please check out the rest of my work on [${data.name}]('http://github.com/${data.name}) 
-
+If you have any questions please feel free to reach me by email at the following email address: (${data.emailAddress}). Please check out the rest of my work on github @[${data.gitusername}]('http://github.com/${data.gitusername}) 
 
 `;
 }
 
-module.exports = {
-  generate: generateMarkdown
-}
+module.exports = generateMarkdown;

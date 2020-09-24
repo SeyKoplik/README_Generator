@@ -5,10 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Seychelle",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
   },
-  "description": ""
+  "description": "something",
+  "repository": {
+    "type": "git",
+    "url": "Readme_generator"
+  },
+  "devDependencies": {}
 }
