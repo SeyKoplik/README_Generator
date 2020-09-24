@@ -24,9 +24,13 @@ ${data.description}
 ${data.usage}
 
 ## License
-${data.license}
+This project is covered under this
+${data.license} license. 
+
+Click on the badge on top for more information about the license.
 
 ## Contributing
+If you would like to contribute, please follow the process below:
 ${data.contribution}
 
 ## Tests

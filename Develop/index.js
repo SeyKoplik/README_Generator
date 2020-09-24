@@ -61,7 +61,7 @@ const questions = [
   {
     type: "input",
     name: "contribution",
-    message: "Are there any contributors you would like to add? If any, please list them here."
+    message: "What contributing instructions would you like to add for this project?"
   },
   {
     type: "input",
