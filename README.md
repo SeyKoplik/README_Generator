@@ -7,8 +7,6 @@ This homework is created to generate a README for a project that it is uploaded 
 Using command line interface to interact using inquirer prompts to create a readme file.
 
 ## Preview
-<iframe src="https://drive.google.com/file/d/1w4ycMWNi6OqlHHDp0D7a5fmXbjicMRyK/preview" width="260" height="150"></iframe>
-
 ![Screenshot](cli.png)
 ![Screenshot](readme_example.png)
 
@@ -21,10 +19,11 @@ inquirer
 markdown
 
 ## Links
-
+Video Demo of CLI operation
 [video link]('https://drive.google.com/file/d/1w4ycMWNi6OqlHHDp0D7a5fmXbjicMRyK/view')
 
-[sample readme]('./Develop/README_example.md')
+README_example.md file generated
+[sample readme]('https://github.com/SeyKoplik/README_Generator/blob/master/Develop/README_example.md')
 
 
 --- 
