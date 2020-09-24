@@ -14,9 +14,11 @@ Using command line interface to interact using inquirer prompts to create a read
 How to operate project: do an npm install of the inquirer and its associated dependencies and run node index.js of the root folder in the command line to answer a series of prompts to create the readme file.
 
 ## Attributes
-node.js
-inquirer
-markdown
+- node.js
+
+- inquirer
+
+- markdown
 
 ## Links
 <a href="https://drive.google.com/file/d/1w4ycMWNi6OqlHHDp0D7a5fmXbjicMRyK/view" target=_new>Video Demo of CLI operation</a>
