@@ -2,8 +2,12 @@
 
 ## Description
 
+
 ## Usage
-[screenshot]('urlof.png')
+Using command line interface to interact using inquirer prompts to create a readme file.
+
+[!screenshot1]("cli.png")
+[!screenshot2]("readme_example.png")
 
 ## Installation
 How to operate project
