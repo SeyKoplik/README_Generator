@@ -7,8 +7,8 @@ This homework is created to generate a README for a project that it is uploaded 
 Using command line interface to interact using inquirer prompts to create a readme file.
 
 ## Preview
-![Screenshot](cli.png)
-![Screenshot](readme_example.png)
+<img src="cli.png" width="200" alt="ss1" height="160">
+<img src="readme_example.png" alt="ss2" width="200" height="160">
 
 ## Installation
 How to operate project: do an npm install of the inquirer and its associated dependencies and run node index.js of the root folder in the command line to answer a series of prompts to create the readme file.
@@ -19,11 +19,9 @@ inquirer
 markdown
 
 ## Links
-Video Demo of CLI operation
-[video link]('https://drive.google.com/file/d/1w4ycMWNi6OqlHHDp0D7a5fmXbjicMRyK/view')
+<a href="https://drive.google.com/file/d/1w4ycMWNi6OqlHHDp0D7a5fmXbjicMRyK/view" target=_new>Video Demo of CLI operation</a>
 
-README_example.md file generated
-[sample readme]('https://github.com/SeyKoplik/README_Generator/blob/master/Develop/README_example.md')
+<a href="https://github.com/SeyKoplik/README_Generator/blob/master/Develop/README_example.md" target=_new>README_example.md file generated</a>
 
 
 --- 
